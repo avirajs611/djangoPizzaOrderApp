@@ -1,0 +1,18 @@
+
+<a sytle="color: green"  href="{% url 'home'%}">Home</a>
+<h1>Edit Pizza</h>
+    <br>
+    {% if note %}
+    <h2>{{note}}</h2>
+    {% endif %}
+
+
+    <form action="{% url 'edit_order'  pizza.id%}" method="POST">
+        {% csrf_token %}
+        {{pizzaform}}
+
+        <input class="Edit" style="background-color: skyblue;" type="submit" value="Edit Pizza">
+    </form>
+
+<br>
+<a sytle="color: green" href="{% url 'order' %}">Create New Order</a>

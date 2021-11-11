@@ -1,0 +1,4 @@
+nanadiasgarden/__pycache__/
+pizza/__pycache__/
+pizza/migrations/__pycache__
+db.sqlite3
